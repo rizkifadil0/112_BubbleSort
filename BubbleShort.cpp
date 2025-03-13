@@ -48,7 +48,22 @@ void bubblesort(){
     
 
 }
+void displaydata(){
+    cout << endl ;
+    cout << "===========================" << endl;
+    cout << "Data setelah Di urutkan" << endl;
+    cout << "===========================" << endl;
+    cout << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Data Ke-" << i + 1 << "=" << arr[i] << endl;
+    }
+}
 
 int main (){
     inputdata();
+    bubblesort();
+    displaydata();
+    return 0;
 }
